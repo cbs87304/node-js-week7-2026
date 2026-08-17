@@ -31,7 +31,7 @@ CREATE INDEX IF NOT EXISTS idx_course_bookings_course_id
 ON course_bookings(course_id);
 
 CREATE INDEX IF NOT EXISTS idx_courses_start_at
-ON courses(start_at)
+ON courses(start_at);
 
 -- 加分題（選做）：使用部分索引（partial index）讓工單 2 的索引更小、更有效率
 CREATE INDEX IF NOT EXISTS idx_course_bookings_user_id_active
